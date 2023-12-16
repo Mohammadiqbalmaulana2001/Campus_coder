@@ -1,0 +1,22 @@
+* {
+    background-color: burlywood;
+}
+
+h1 {
+    color: red;
+    text-align: center;
+    
+}
+
+button{
+    color: rgb(143, 46, 46);
+    background-color: rgb(247, 232, 213);
+}
+
+p{
+    color: white;
+    background-color:black ;
+    text-align: center;
+    line-height: 1.5;
+    letter-spacing: 6px;
+}   
