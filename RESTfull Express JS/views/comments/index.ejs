@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>comments</h1>
+
+    <ul>
+        <% for(let comment of comments) {%>
+            <li>
+                <%= comment.username %>: <%= comment.text %>
+                <a href="/comments/<%= comment.id %>">details</a>
+                <a href="/comments/<%= comment.id %>/edit">EDIT</a>
+                <form action="/comments/<%= comment.id %>?method=DELETE" method="post">
+                    <button >DELETE</button>
+                </form>
+            </li>
+        <% } %>
+    </ul>
+    <a href="/comments/create">add</a>
+</body>
+</html>
